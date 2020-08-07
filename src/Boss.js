@@ -1,6 +1,6 @@
 import React, { Component, Fragment } from 'react';
 import { CSSTransition } from "react-transition-group"
-
+import './style.css'
 // - Transition
 // -cssTRransition
 class Boss extends Component {
@@ -13,9 +13,9 @@ class Boss extends Component {
     render() { 
         return ( 
             <Fragment>
-                {/* <CSSTransition unmountOnExit in={this.state.isShow} timeout={2000} classNames="boss-text">
+                <CSSTransition unmountOnExit in={this.state.isShow} timeout={2000} classNames="boss-text">
                     <div>big-Boss</div>
-                </CSSTransition>    */}
+                </CSSTransition>   
                 <div>
                     {/* <div className={this.state.isShow?'show':'hide'}>big-Boss</div> */}
                     <div><button onClick={this.toggle}>召唤Boss</button></div>
